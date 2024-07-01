@@ -9,7 +9,7 @@ using namespace std;
 
 int power(int a, int b) {
 	int n=1;
-	if (b < 0) return 0;
+	if (b < 0) throw runtime_error("Negative exponent not supported!");
 	if (b == 0) return 1;
 	else 
 		while(b!=0){
